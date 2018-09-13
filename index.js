@@ -13,9 +13,13 @@ function logWhisper(string) {
   console.log(spy)
 }
 function sayHiToGrandma(string) {
-  var lowercase = 'hello!'
-  var uppercase = 'HELLO!'
-  var loveyou = 'I love you, Grandma.'
-  if (sayHiToGrandma(lowercase) )
-  console.log("I can't hear you!") 
+  if (string.toLowerCase() === string) {
+    console.log("I can't hear you!")
+  }
+  else if (string.toUpperCase() === string) {
+    console.log("YES INDEED!")
+  }
+  else if (string === "I love you, Grandma.") {
+    console.log("I love you, too.")
+  }
 }
